@@ -1,0 +1,316 @@
+* {
+  box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    background-color: #f6f6f6;
+    height: 100vh;
+  }
+  .site-title h1 {
+    font-weight: 400;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: red;
+    font-size: 2rem;
+    margin: 0;
+  }
+  .subtitle {
+    font-weight: 700;
+    color: black;
+    font-size: 0.75rem;
+    margin: 0;
+    text-transform: capitalize;
+  }
+  .container {
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  .img-bahan1{
+    width: 50px;
+    border-radius: 100%;
+    margin-left: -60px;
+    float: left;
+    border: 1px solid black;
+    margin-right: 10px;
+    /* position: relative; */
+  }
+  .container-nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  header {
+    background-color: white;
+    padding: 2em 0;
+    box-shadow: 0 4px 8px 0 rgba(22, 22, 22, 0.19);
+  }
+  @media (max-width: 675px) {
+    .container-nav {
+      flex-direction: column;
+    }
+    header {
+      text-align: center;
+    }
+    .img-bahan1{
+      max-width: 100%;
+    }
+  }
+  nav ul li .drop{
+    display: none;
+  }
+  nav ul li:hover .drop{
+    display: block;
+    position: absolute;
+    padding: 10px;
+  }
+  .drop{
+    margin-left: -50px;
+  }
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  nav li {
+    margin-left: 2em;
+  }
+  nav a {
+    text-decoration: none;
+    color: #163172;
+    font-weight: 600;
+    text-transform: capitalize;
+    padding: 2em 0;
+  }
+  nav a:hover{
+    color: #d50707;
+  }
+  nav a:focus{
+    color: #163172;
+  }
+  @media (max-width: 675px) {
+    nav ul {
+      flex-direction: column;
+    }
+    nav li {
+      margin: 0.5em 0;
+    }
+  }
+/* Main */
+#home{
+  background: url('bahan2.jpg');
+  height: 85vh;
+  position: relative;
+  width: 100%;
+  background-size: cover;
+}
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.65);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.landing-text {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+.landing-text h3 {
+  font-weight: 700;
+  color: white;
+  font-family:cursive;
+}
+.landing-text h1 {
+  font-size: 450%;
+  font-weight: 700;
+  color: red;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  padding-bottom: 0;
+  margin: 0 0;
+}
+@media (max-width: 600px) {
+  .landing-text h1 {
+    font-size: 260%;
+  }
+}
+.btn-hire {
+  background-color: RED;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.btn-hire:hover{
+  color: black;
+}
+.btn-hire:focus{
+  color: #d50707;
+}
+@media (max-width: 800px) {
+  .btn-hire {
+    padding: 8px 16px;
+  }
+}
+#hr-main {
+  width: 100px;
+  height: 7px;
+  border-radius: 1rem;
+  background-color: white;
+  margin-bottom: 8px;
+}
+.svs-tema{
+  text-align: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: #d50707;
+  letter-spacing: 1px;
+  font-size: 50px;
+}
+.bhn3{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+.txt-svs{
+  text-align: center;
+  font-size: 50px;
+  font-family:cursive;
+  margin-top: -15px;
+}
+.footer{
+  background-color: rgb(128, 0, 0);
+  box-shadow: 0 4px 8px 15px rgba(22, 22, 22, 0.19);
+}
+.cr{
+  text-align: center;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: white;
+  
+}
+.user{
+  width: 20px;
+}
+
+/* barberman */
+.bhn5{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  border-radius: 100%;
+}
+.sosmed{
+  text-align: center;
+  text-decoration: none;
+}
+
+/* shop */
+.kontener .konten{
+  position: absolute;
+  bottom: 0; 
+  background: rgb(0, 0, 0); 
+  background: rgba(0, 0, 0, 0.5); 
+  color: #f1f1f1; 
+  width: 100%;
+  padding: 20px;
+}
+
+/* about */
+#depan{
+  background: url('bg.jpg');
+  height: 85vh;
+  position: relative;
+  width: 100%;
+  background-size: cover;
+}
+.deskrip{
+  text-align: center;
+  font-size: 25px;
+  font-family:cursive;
+}
+
+/* contact */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 10px 2em;
+}
+.flex-item-left {
+  padding: 10px;
+  flex: 50%;
+}
+.flex-item-left h4 {
+  font-weight: 700;
+  color: #d50707;
+}
+.flex-item-left p {
+  font-weight: 400;
+  color: #181b2c;
+}
+.flex-item-right {
+  padding: 10px;
+  flex: 50%;
+}
+.flex-item-right form {
+  margin: 10px;
+}
+.flex-item-right form input[type="text"],
+select,
+textarea {
+  font-weight: 400;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+.flex-item-right button {
+  background-color: #d50707;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 3px;
+  width: 100%;
+}
+.flex-item-right button:hover,
+.flex-item-right button:focus {
+  background-color: #163172;
+  color: white;
+}
+@media (max-width: 800px) {
+  .flex-item-left,
+  .flex-item-right {
+    flex: 100%;
+  }
+}
+.alamat{
+  text-decoration: none;
+}
+.alamat:hover{
+  color: goldenrod;
+}
